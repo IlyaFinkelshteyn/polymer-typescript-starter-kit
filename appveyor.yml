@@ -4,14 +4,12 @@ clone_depth: 1
 init:
 - ps:
 install:
-- ps: >-
-    set PATH=%APPDATA%\npm;%PATH%
-    npm i -g bower gulp
-    npm i
-    bower i
+- set PATH=%APPDATA%\npm;%PATH%
+- npm i -g bower gulp
+- npm i
+- bower i
 build_script:
-- ps: gulp
+- gulp
 test_script:
-- ps: >-
-    npm run test
-    npm run tezt
+- npm run test
+- npm run tezt
